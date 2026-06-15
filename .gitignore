@@ -1,0 +1,8 @@
+node_modules/
+
+src/css/output.css
+
+.env
+.env.local
+
+.DS_Store
