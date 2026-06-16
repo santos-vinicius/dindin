@@ -1,0 +1,1 @@
+Lembrar de usar `npx @tailwindcss/cli -i ./src/input.css -o ./src/output.css --watch` para iniciar o watch no projeto antes de codar 
