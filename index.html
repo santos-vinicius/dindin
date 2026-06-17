@@ -4,70 +4,187 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="/css/output.css">
+  <link rel="stylesheet" href="./src/css/output.css">
   <title>DinDin | Organização Financeira Simplificada</title>
 </head>
 
-<body>
-  <div id="main-intro">
-    <div class="logo">
-      <img src="./src/assets/logo.svg" alt="Logotipo DinDin">
-      <h1>DinDin</h1>
-    </div>
-    <h2 class="text-3xl font-bold underline">
-      Seu dinheiro, com clareza e na sua mão
-    </h1>
-    <p>
-      Acompanhe rapidamente receitas, despesas e investimentos em uma única
-      tela. Tome controle da sua vida financeira, sem planilhas.
-    </p>
+<body class="bg-background text-foreground font-sans">
+  <div class="min-h-screen w-full bg-background text-foreground grid lg:grid-cols-[1.05fr_1fr]">
+    <aside class="relative hidden lg:flex flex-col justify-between p-12 overflow-hidden border-r bg-muted/30">
+      <div class="absolute inset-0 grid-pattern opacity-30 pointer-events-none"></div>
 
-    <div>
-      <ul>
-        <li>Insights em tempo real sobre seus hábitos.</li>
-        <li>Registros rápidos e sem burocracias.</li>
-        <li>Visualização de impactos a longo prazo.</li>
-      </ul>
-    </div>
-  </div>
-  <div id="main-login">
-    <section class="form-login">
-      <h1>Acesse sua conta</h1>
-      <p>Bem-vindo(a) de volta. Acesse seu painel financeiro.</p>
-      <div>
-        <div>
-          <a href="#">Login com o Google</a>
-          <a href="#">
-            <img src="#" alt="Acesso com Conta Apple" srcset="">
-          </a>
+      <div class="relative z-10 flex items-center gap-2.5">
+        <div class="size-9 rounded-md bg-foreground grid place-items-center">
+          <span class="font-display font-bold text-background text-lg">$</span>
+        </div>
+        <span class="font-display text-xl font-bold tracking-tight">DinDin</span>
+      </div>
+
+      <div class="relative z-10 max-w-lg space-y-8">
+        <div class="inline-flex items-center gap-1.5 rounded-md border bg-background px-2.5 py-1 text-xs font-medium">
+          ✦ Controle financeiro descomplicado!
+        </div>
+
+        <h1 class="font-display text-5xl xl:text-6xl font-bold tracking-tight leading-[1.05]">
+          Seu dinheiro,<br />
+          <span class="text-muted-foreground">com clareza</span><br />
+          cirúrgica.
+        </h1>
+
+        <p class="text-base text-muted-foreground leading-relaxed max-w-md">
+          Acompanhe receitas, despesas e investimentos em uma única tela.
+          Decisões melhores, sem planilhas.
+        </p>
+
+        <ul class="grid gap-3 pt-2">
+          <li class="flex items-center gap-3 text-sm">
+            <span class="size-8 rounded-md bg-background border grid place-items-center">↗</span>
+            <span class="text-foreground/90">Insights em tempo real sobre seus hábitos</span>
+          </li>
+          <li class="flex items-center gap-3 text-sm">
+            <span class="size-8 rounded-md bg-background border grid place-items-center">✓</span>
+            <span class="text-foreground/90">Registros rápidos e sem burocracia.</span>
+          </li>
+          <li class="flex items-center gap-3 text-sm">
+            <span class="size-8 rounded-md bg-background border grid place-items-center">✦</span>
+            <span class="text-foreground/90">Visualização de impactos à longo prazo.</span>
+          </li>
+        </ul>
+      </div>
+
+      <div class="relative z-10 flex items-center justify-between text-xs text-muted-foreground">
+        <p>© 2026 DinDin | Feito por: [Colocar meu nome aqui eu acho]</p>
+        <div class="flex items-center gap-4">
+          <a href="#" class="hover:text-foreground transition-colors">Termos</a>
+          <a href="#" class="hover:text-foreground transition-colors">Privacidade</a>
         </div>
       </div>
+    </aside>
 
-      <div>
-        <form action="" method="get">
-          <label for="email">E-mail</label>
-          <input type="text" name="email" id="email" placeholder="exemplo@email.com" required/>
-
-          <div class="login-password">
-            <label for="password">Senha</label>
-            <a href="#">Esqueci minha senha</a>
-            <input type="password" name="password" id="password" placeholder="Digite sua senha aqui..." required>
+    <main class="flex items-center justify-center p-6 sm:p-12 relative">
+      <div class="relative w-full max-w-md">
+        <div class="flex lg:hidden items-center gap-2.5 mb-10">
+          <div class="size-9 rounded-md bg-foreground grid place-items-center">
+            <span class="font-display font-bold text-background text-lg">N</span>
           </div>
-          
+          <span class="font-display text-xl font-bold tracking-tight">Norvex</span>
+        </div>
 
-          <div>
-            <input type="checkbox" name="save-login" id="save-login">
-            <label for="save-login">Manter conectada por 30 dias</label>
-          </div>
-          
+        <div class="space-y-2 mb-8">
+          <h2 class="font-display text-3xl font-bold tracking-tight">Entrar na conta</h2>
+          <p class="text-sm text-muted-foreground">
+            Bem-vinda de volta. Acesse seu painel financeiro.
+          </p>
+        </div>
 
-          <div class="btn-submit">
-            <input type="submit" value="Entrar">
+        <div class="grid grid-cols-2 gap-3 mb-6">
+          <button type="button"
+            class="h-11 inline-flex items-center justify-center gap-2 rounded-md border border-border bg-background px-4 text-sm font-medium text-foreground transition-colors hover:bg-muted"
+          >
+            <img
+              src="./src/assets/google.svg"
+              class="size-4 shrink-0"
+              alt="Google Logo"
+            />
+            <span>Google</span>
+          </button>
+
+          <button
+            type="button"
+            class="h-11 inline-flex items-center justify-center gap-2 rounded-md border border-border bg-background px-4 text-sm font-medium text-foreground transition-colors hover:bg-muted"
+          >
+            <img
+              src="./src/assets/apple-logo.svg"
+              class="size-4 shrink-0 dark:invert"
+              alt="Apple Logo"
+            />
+            <span>Apple</span>
+          </button>
+        </div>
+
+        <div class="relative my-6 flex items-center">
+          <div class="h-px flex-1 bg-border"></div>
+          <span class="bg-background px-3 text-xs uppercase tracking-wider text-muted-foreground">
+            ou com e-mail
+          </span>
+          <div class="h-px flex-1 bg-border"></div>
+        </div>
+
+        <form class="space-y-4">
+          <div class="space-y-1.5">
+            <label for="email" class="text-sm font-medium">E-mail</label>
+            <input
+              id="email"
+              type="email"
+              required
+              placeholder="voce@email.com"
+              class="h-11 w-full rounded-md border bg-background px-3 text-sm outline-none focus:ring-2 focus:ring-ring"
+            />
           </div>
+
+          <div class="space-y-1.5">
+            <div class="flex items-center justify-between">
+              <label for="password" class="text-sm font-medium">Senha</label>
+              <a href="#" class="text-xs font-medium hover:underline">
+                Esqueci minha senha
+              </a>
+            </div>
+
+            <div class="relative">
+              <input
+                id="password"
+                type="password"
+                required
+                placeholder="••••••••"
+                class="h-11 w-full rounded-md border bg-background px-3 pr-10 text-sm outline-none focus:ring-2 focus:ring-ring"
+              />
+              <button
+                id="toggle-password"
+                type="button"
+                class="absolute right-2 top-1/2 -translate-y-1/2 size-7 grid place-items-center rounded-md text-muted-foreground hover:text-foreground hover:bg-muted transition-colors"
+                aria-label="Mostrar senha"
+              >
+                👁
+              </button>
+            </div>
+          </div>
+
+          <div class="flex items-center gap-2 pt-1">
+            <input id="remember" type="checkbox" class="size-4 rounded border" />
+            <label for="remember" class="text-sm text-muted-foreground cursor-pointer">
+              Manter conectada por 30 dias
+            </label>
+          </div>
+
+          <a
+            href="./dashboard.html"
+            class="w-full h-11 mt-2 inline-flex items-center justify-center gap-2 rounded-md bg-primary px-4 text-sm font-medium text-primary-foreground hover:opacity-90 transition-opacity"
+          >
+            Entrar →
+          </a>
         </form>
+
+        <p class="mt-8 text-center text-sm text-muted-foreground">
+          Ainda não tem conta?
+          <a href="#" class="font-medium text-foreground hover:underline">
+            Criar conta gratuita
+          </a>
+        </p>
       </div>
-    </section>
+    </main>
   </div>
+
+  <!-- Passar para o arquivo JS depois ou finalizar apenas no angular mesmo -->
+  <script>
+    const button = document.querySelector("#toggle-password");
+    const input = document.querySelector("#password");
+
+    button.addEventListener("click", () => {
+      const isPassword = input.type === "password";
+      input.type = isPassword ? "text" : "password";
+      button.setAttribute("aria-label", isPassword ? "Ocultar senha" : "Mostrar senha");
+    });
+  </script>
 </body>
 
 </html>

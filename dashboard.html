@@ -1,0 +1,237 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>DinDin Dashboard</title>
+  <link rel="stylesheet" href="./src/css/output.css" />
+</head>
+
+<body class="bg-background text-foreground font-sans">
+  <div class="min-h-screen lg:grid lg:grid-cols-[260px_1fr]">
+    <aside class="hidden lg:flex flex-col border-r border-border bg-card px-4 py-5">
+      <div class="flex items-center gap-2.5 px-2 mb-8">
+        <div class="size-9 rounded-md bg-foreground text-background grid place-items-center font-display font-bold">
+          $
+        </div>
+        <span class="font-display text-xl font-bold">DinDin</span>
+      </div>
+
+      <nav class="grid gap-1 text-sm">
+        <a href="#" class="rounded-md bg-muted px-3 py-2 text-foreground font-medium">Dashboard</a>
+        <a href="#" class="rounded-md px-3 py-2 text-muted-foreground hover:bg-muted hover:text-foreground">Transações</a>
+        <a href="#" class="rounded-md px-3 py-2 text-muted-foreground hover:bg-muted hover:text-foreground">Cartões</a>
+        <a href="#" class="rounded-md px-3 py-2 text-muted-foreground hover:bg-muted hover:text-foreground">Metas</a>
+        <a href="#" class="rounded-md px-3 py-2 text-muted-foreground hover:bg-muted hover:text-foreground">Relatórios</a>
+      </nav>
+
+      <div class="mt-auto rounded-md border border-border bg-background p-4">
+        <p class="text-xs text-muted-foreground">Apoie o projeto</p>
+        <p class="mt-1 font-display font-semibold">DinDin no GitHub</p>
+      </div>
+    </aside>
+
+    <div class="min-w-0">
+      <header class="sticky top-0 z-20 flex h-16 items-center justify-between border-b border-border bg-background/90 px-4 backdrop-blur sm:px-8">
+        <div class="flex lg:hidden items-center gap-2">
+          <div class="size-8 rounded-md bg-foreground text-background grid place-items-center font-bold">$</div>
+          <span class="font-display font-bold">DinDin</span>
+        </div>
+
+        <div class="hidden lg:block">
+          <p class="text-sm text-muted-foreground">Painel financeiro</p>
+        </div>
+
+        <div class="flex items-center gap-3">
+          <button class="size-9 rounded-md border border-border hover:bg-muted">🔎</button>
+          <button class="size-9 rounded-md border border-border hover:bg-muted">🔔</button>
+          <div class="size-9 rounded-full bg-muted grid place-items-center text-sm font-semibold">VS</div>
+        </div>
+      </header>
+
+      <main class="flex-1 px-4 py-8 sm:px-8">
+        <div class="mb-8 flex flex-wrap items-end justify-between gap-4">
+          <div>
+            <p class="text-sm text-muted-foreground">Bem-vinda de volta,</p>
+            <h1 class="font-display mt-1 text-4xl font-bold tracking-tight">
+              Teste Cliente
+            </h1>
+          </div>
+
+          <div class="flex items-center gap-2">
+            <button class="h-10 rounded-md border border-border px-4 text-sm font-medium hover:bg-muted">
+              Exportar
+            </button>
+            <button class="h-10 rounded-md bg-primary px-4 text-sm font-medium text-primary-foreground hover:opacity-90">
+              + Novo gasto
+            </button>
+          </div>
+        </div>
+
+        <section class="mb-8 grid grid-cols-1 gap-4 sm:grid-cols-2 xl:grid-cols-4">
+          <article class="rounded-md border border-primary/40 bg-gradient-card p-5 shadow-card">
+            <div class="flex items-center justify-between">
+              <p class="text-sm text-muted-foreground">Saldo total</p>
+              <span class="size-9 rounded-md bg-primary/15 text-primary grid place-items-center">💼</span>
+            </div>
+            <p class="mt-4 font-display text-3xl font-bold">R$ 48.927</p>
+            <p class="mt-2 text-sm text-success">↑ 12,4% este mês</p>
+          </article>
+
+          <article class="rounded-md border border-border bg-card p-5 shadow-card">
+            <div class="flex items-center justify-between">
+              <p class="text-sm text-muted-foreground">Receitas do mês</p>
+              <span class="size-9 rounded-md bg-muted grid place-items-center">↙</span>
+            </div>
+            <p class="mt-4 font-display text-3xl font-bold">R$ 14.280</p>
+            <p class="mt-2 text-sm text-success">↑ 8,1% este mês</p>
+          </article>
+
+          <article class="rounded-md border border-border bg-card p-5 shadow-card">
+            <div class="flex items-center justify-between">
+              <p class="text-sm text-muted-foreground">Despesas do mês</p>
+              <span class="size-9 rounded-md bg-muted grid place-items-center">↗</span>
+            </div>
+            <p class="mt-4 font-display text-3xl font-bold">R$ 6.142</p>
+            <p class="mt-2 text-sm text-destructive">↓ 3,7% este mês</p>
+          </article>
+
+          <article class="rounded-md border border-border bg-card p-5 shadow-card">
+            <div class="flex items-center justify-between">
+              <p class="text-sm text-muted-foreground">Investimentos</p>
+              <span class="size-9 rounded-md bg-muted grid place-items-center">📈</span>
+            </div>
+            <p class="mt-4 font-display text-3xl font-bold">R$ 92.430</p>
+            <p class="mt-2 text-sm text-success">↑ 18,9% este mês</p>
+          </article>
+        </section>
+
+        <section class="grid grid-cols-1 gap-6 xl:grid-cols-3">
+          <div class="space-y-6 xl:col-span-2">
+            <article class="rounded-md border border-border bg-card p-5 shadow-card">
+              <div class="mb-6 flex items-center justify-between">
+                <div>
+                  <h2 class="font-display text-xl font-bold">Evolução do saldo</h2>
+                  <p class="text-sm text-muted-foreground">Últimos 6 meses</p>
+                </div>
+                <button class="rounded-md border border-border px-3 py-1.5 text-sm hover:bg-muted">
+                  Mensal
+                </button>
+              </div>
+
+              <div class="flex h-64 items-end gap-3 border-b border-border px-2">
+                <div class="flex-1 rounded-t-md bg-primary/30 h-[42%]"></div>
+                <div class="flex-1 rounded-t-md bg-primary/40 h-[55%]"></div>
+                <div class="flex-1 rounded-t-md bg-primary/50 h-[48%]"></div>
+                <div class="flex-1 rounded-t-md bg-primary/60 h-[68%]"></div>
+                <div class="flex-1 rounded-t-md bg-primary/75 h-[78%]"></div>
+                <div class="flex-1 rounded-t-md bg-primary h-[92%]"></div>
+              </div>
+            </article>
+
+            <article class="rounded-md border border-border bg-card p-5 shadow-card">
+              <p class="text-sm text-muted-foreground">Média diária de gastos</p>
+              <div class="mt-2 flex items-end justify-between gap-4">
+                <p class="font-display text-3xl font-bold">R$ 204,73</p>
+                <p class="text-sm text-success">12% abaixo da média</p>
+              </div>
+            </article>
+
+            <article class="rounded-md border border-border bg-card p-5 shadow-card">
+              <h2 class="font-display text-xl font-bold">Transações recentes</h2>
+
+              <div class="mt-5 divide-y divide-border">
+                <div class="flex items-center justify-between py-3">
+                  <div>
+                    <p class="font-medium">Mercado Central</p>
+                    <p class="text-sm text-muted-foreground">Alimentação</p>
+                  </div>
+                  <p class="font-medium text-destructive">- R$ 184,90</p>
+                </div>
+
+                <div class="flex items-center justify-between py-3">
+                  <div>
+                    <p class="font-medium">Salário</p>
+                    <p class="text-sm text-muted-foreground">Receita</p>
+                  </div>
+                  <p class="font-medium text-success">+ R$ 8.400,00</p>
+                </div>
+
+                <div class="flex items-center justify-between py-3">
+                  <div>
+                    <p class="font-medium">Streaming</p>
+                    <p class="text-sm text-muted-foreground">Assinaturas</p>
+                  </div>
+                  <p class="font-medium text-destructive">- R$ 39,90</p>
+                </div>
+              </div>
+            </article>
+          </div>
+        
+        
+          <div class="space-y-6">
+            <!-- Teste de funçao futura 
+
+            <article class="rounded-md border border-border bg-gradient-primary p-5 text-primary-foreground shadow-card">
+              <p class="text-sm opacity-80">Cartão principal</p>
+              <p class="mt-8 font-display text-2xl font-bold">•••• 4821</p>
+              <div class="mt-6 flex justify-between text-sm">
+                <span>Marina Rios</span>
+                <span>09/29</span>
+              </div>
+            </article>
+            
+            
+            ---- Teste de funçao futura -->
+
+            <article class="rounded-md border border-border bg-card p-5 shadow-card">
+              <h2 class="font-display text-xl font-bold">Ações rápidas</h2>
+              <div class="mt-4 grid grid-cols-2 gap-3">
+                <button class="rounded-md border border-border p-3 text-sm hover:bg-muted">Novo gasto</button>
+                <button class="rounded-md border border-border p-3 text-sm hover:bg-muted">Transferir</button>
+                <button class="rounded-md border border-border p-3 text-sm hover:bg-muted">Meta</button>
+                <button class="rounded-md border border-border p-3 text-sm hover:bg-muted">Relatório</button>
+              </div>
+            </article>
+
+            <article class="rounded-md border border-border bg-card p-5 shadow-card">
+              <h2 class="font-display text-xl font-bold">Metas</h2>
+
+              <div class="mt-5 space-y-5">
+                <div>
+                  <div class="mb-2 flex justify-between text-sm">
+                    <span>Reserva de emergência</span>
+                    <span class="text-muted-foreground">72%</span>
+                  </div>
+                  <div class="h-2 rounded-full bg-muted">
+                    <div class="h-2 w-[72%] rounded-full bg-primary"></div>
+                  </div>
+                </div>
+
+                <div>
+                  <div class="mb-2 flex justify-between text-sm">
+                    <span>Viagem</span>
+                    <span class="text-muted-foreground">44%</span>
+                  </div>
+                  <div class="h-2 rounded-full bg-muted">
+                    <div class="h-2 w-[44%] rounded-full bg-primary"></div>
+                  </div>
+                </div>
+              </div>
+            </article>
+          </div>
+        </section>
+
+        <footer class="mt-12 flex items-center justify-between border-t border-border pt-6 text-xs text-muted-foreground">
+          <p>© 2026 DinDin · Controle de Gastos </p>
+
+          <p>
+            Desenvolvido por 
+            <a href="github.com/santos-vinicius">Vinicius Santos</a>
+          </p>
+        </footer>
+      </main>
+    </div>
+  </div>
+</body>
+</html>
