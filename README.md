@@ -1,4 +1,4 @@
-<h1 align="center">Norvex Fintech</h1>
+<h1 align="center">DinDin Fintech</h1>
 
 <p align="center">
   Protótipo de uma aplicação fintech para controle financeiro, desenvolvido como atividade acadêmica da FIAP.
@@ -20,7 +20,7 @@
 
 ## Sobre o projeto
 
-O **Norvex Fintech** é um protótipo de interface para uma aplicação de controle financeiro. A proposta é validar a experiência inicial de uso, incluindo telas para autenticação, dashboard, acompanhamento de gastos, receitas, cartões e metas.
+O **DinDin Fintech** é um protótipo de interface para uma aplicação de controle financeiro. A proposta é validar a experiência inicial de uso, incluindo telas para autenticação, dashboard, acompanhamento de gastos, receitas, cartões e metas.
 
 Este projeto faz parte de uma atividade acadêmica da **FIAP** e ainda está em fase de protótipo. Por isso, algumas funcionalidades podem estar estáticas ou simuladas.
 
