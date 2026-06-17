@@ -5,9 +5,6 @@
 </p>
 
 <p align="center">
-  <a href="https://github.com/santos-vinicius/dindin">
-    <img alt="Repository" src="https://img.shields.io/badge/repository-santos--vinicius%2Fdindin-181717?style=for-the-badge&logo=github">
-  </a>
   <img alt="Status" src="https://img.shields.io/badge/status-prot%C3%B3tipo%20em%20desenvolvimento-0ea5e9?style=for-the-badge">
   <img alt="FIAP" src="https://img.shields.io/badge/FIAP-atividade%20acad%C3%AAmica-ed145b?style=for-the-badge">
 </p>
